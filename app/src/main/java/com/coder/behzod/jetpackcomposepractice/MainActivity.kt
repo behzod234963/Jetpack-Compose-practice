@@ -38,22 +38,85 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent{
-            LazyRow(modifier = Modifier.fillMaxWidth().background(Color.Gray)){
-                itemsIndexed(
-                    arrayListOf(PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
-                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"))
-                ){ _ ,item->
+        setContent {
+            LazyColumn(modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.Gray)
+            ) {
+                itemsIndexed(arrayListOf(
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    ),
+                    PeoplesModel(R.drawable.ic_launcher_background
+                        ,"behzod"
+                        ,"rgtnbrtnbrtjnnnr;tbnrt;bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnrtwwwwwwwwtthbbbbbbbbnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                    )
+                )){index, item ->
                     FamousPeople(model = item)
                 }
             }
@@ -62,18 +125,20 @@ class MainActivity : ComponentActivity() {
 }
 @Preview(showBackground = true)
 @Composable
-fun MainActivityUI(){
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .background(Color.Red),
+fun MainActivityUI() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Red),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally) {
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         Text(text = "Behzod", modifier = Modifier.clickable {
         })
         Text(text = "Behzod")
         Text(text = "Behzod")
     }
-    Row(Modifier.background(Color.Gray)){
+    Row(Modifier.background(Color.Gray)) {
         Text(text = "Behzod")
         Text(text = "Behzod")
         Text(text = "Behzod")
