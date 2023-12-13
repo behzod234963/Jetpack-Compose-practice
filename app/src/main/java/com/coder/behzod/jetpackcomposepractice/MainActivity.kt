@@ -13,7 +13,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -37,12 +39,22 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
-            LazyColumn(modifier = Modifier.fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally) {
+            LazyRow(modifier = Modifier.fillMaxWidth().background(Color.Gray)){
                 itemsIndexed(
-                    listOf("sekbbnjket","aedblt","asgjverg","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt")
-                ){index,item ->
-                    ListItem(name = item, prof = index .toString())
+                    arrayListOf(PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"),
+                        PeoplesModel(R.drawable.ic_launcher_background,"Ronaldo"))
+                ){ _ ,item->
+                    FamousPeople(model = item)
                 }
             }
         }
