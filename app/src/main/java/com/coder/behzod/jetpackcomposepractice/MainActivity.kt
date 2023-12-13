@@ -30,7 +30,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
-             MainActivityUI()
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
+             ListItem(name = "Behzod", prof = "Coder")
         }
     }
 }
