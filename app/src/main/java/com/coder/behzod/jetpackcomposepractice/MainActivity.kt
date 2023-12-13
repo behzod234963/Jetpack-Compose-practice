@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -35,27 +37,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                ListItem(name = "jvhvgggjjh", prof = "jhvhjvgvvv")
-                ListItem(name = "cngfm", prof = "Coder")
-                ListItem(name = "cngfhmhj,", prof = "Coder")
-                ListItem(name = "dffghnhmj,", prof = "Coder")
-                ListItem(name = "dffdnhg", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
-                ListItem(name = "xfngh", prof = "Coder")
+            LazyColumn(modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally) {
+                itemsIndexed(
+                    listOf("sekbbnjket","aedblt","asgjverg","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt","aedblt")
+                ){index,item ->
+                    ListItem(name = item, prof = index .toString())
+                }
             }
         }
     }

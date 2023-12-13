@@ -38,7 +38,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ListItem(name: String, prof: String) {
-    var count = remember {
+    val count = remember {
         mutableIntStateOf(0)
     }
     var color = remember {
@@ -68,35 +68,42 @@ fun ListItem(name: String, prof: String) {
                 Text(text = name, fontSize = 20.sp)
                 Text(text = prof)
             }
-            Column (verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally){
-                Card (elevation = CardDefaults.cardElevation(10.dp)
-                    ,shape = RoundedCornerShape(10.dp)
-                ){
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Card(
+                    elevation = CardDefaults.cardElevation(10.dp), shape = RoundedCornerShape(10.dp)
+                ) {
                     Column(
                         Modifier
                             .clickable {
                                 ++count.value
-                                when(count.value){
-                                    10->{
+                                when (count.value) {
+                                    10 -> {
                                         color.value = Color.Blue
                                     }
-                                    20->{
+
+                                    20 -> {
                                         color.value = Color.Black
                                     }
-                                    30->{
+
+                                    30 -> {
                                         color.value = Color.Magenta
                                     }
                                 }
-                            }.size(
+                            }
+                            .size(
                                 width = 120.dp,
                                 height = 60.dp
                             )
                             .background(color.value),
                         verticalArrangement = Arrangement.Center,
-                        horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(text = count.value.toString()
-                            , modifier = Modifier)
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Text(
+                            text = count.value.toString(), modifier = Modifier
+                        )
                     }
                 }
             }
